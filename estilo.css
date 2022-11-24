@@ -1,0 +1,57 @@
+.lista-contatos{
+    border: none;
+}
+
+.lista-contatos tr{
+    border: 1px solid black;
+}
+
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid rgb(137, 137, 177);
+    padding: 3px;
+    /* animation-name: animacao;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse */
+}
+
+@keyframes animacao{
+    25% {background-color: rgb(71, 67, 67);transform: scale(2);}
+    50% {background-color: white;transform: scale(1);}
+    100% {background-color: blue;transform: scale(1);}
+}
+
+.menu li:hover{
+    background-color: aquamarine;
+}
+
+.menu a:visited{
+    color: rgb(27, 104, 78);
+}
+.menu a:active{
+    color: rgb(27, 104, 78);
+}
+
+
+.menu a{
+    text-decoration: none;
+}
+
+
+@media print and (max-width:300px){
+    table{
+        border: 1px dotted blue;
+    }
+}
+
+#texto {
+    position: absolute;
+    left :600px;
+}
+
+#nomecorreto{
+    display: none;
+}

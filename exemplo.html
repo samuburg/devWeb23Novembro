@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    [class*="col-"]{
+        border: 1px solid black;
+        float: left;
+        width: 100%;
+    }
+    .row::after{
+        clear: both;
+    }
+    .row:hover{
+        background-color: rgb(129, 108, 81);
+    }
+
+@media screen and (min-width:413px) {
+
+    .col-1{  width: 8.33%;     }
+
+    .col-2{ width: 16.65%;   }
+
+    .col-3{    width: 24.99%;    }
+    .col-4{    width: 33.32%;    }
+    .col-5{    width: 41.65%;    }
+    .col-6{    width: 49.98%;    }
+    .col-7{    width: 32%;    }
+    .col-8{    width: 32%;    }
+    .col-9{    width: 32%;    }
+    .col-10{    width: 32%;    }
+    .col-11{    width: 32%;    }
+    .col-12{    width: 100%;    }
+
+
+}
+
+</style>
+<body>
+    <div class="row">
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+    </div>
+    <div class="row">
+        <div class="col-2">1</div>
+        <div class="col-3">2</div>
+        <div class="col-1">3</div>
+        <div class="col-6">4</div>
+    </div>
+    
+</body>
+</html>
